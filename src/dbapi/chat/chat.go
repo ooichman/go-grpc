@@ -16,4 +16,5 @@ func (s *Server) SayHello(ctx context.Context, message *Message) (*Message,error
 	log.Printf("Received Message body from client carYear: %s", message.carYear)
 
 	return &Message {carName: "Cassandra", carModule: "Fiat", carYear: "1983"}, nil
+	
 }
